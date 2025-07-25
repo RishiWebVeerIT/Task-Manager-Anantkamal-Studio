@@ -101,18 +101,20 @@ $(function () {
         success: function () {
             modal.hide();
             $('#taskForm')[0].reset();
+             $('#task_id').val('');
             fetchTasks();
         }
     });
 });
 
-    window.editTask = function(id) {
-        $.get(`/tasks/${id}`, function(task) {
-            $('#task_id').val(task.id);
-            $('#title').val(task.title);
-            $('#taskModal').modal('show');
-        });
-    }
+window.editTask = function(id) {
+    $.get(`/tasks/${id}`, function(task) {
+        $('#task_id').val(task.id);
+        $('#title').val(task.title);
+        const modal = new bootstrap.Modal(document.getElementById('taskModal'));
+        modal.show();
+    });
+}
 
     window.deleteTask = function(id) {
         if (confirm("Delete this task?")) {

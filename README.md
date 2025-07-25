@@ -67,7 +67,6 @@ CREATE TABLE `tasks` (
   CONSTRAINT `tasks_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-
 Register a new user
 Add, edit, delete tasks from dashboard
 
@@ -75,4 +74,5 @@ Add, edit, delete tasks from dashboard
 
 <img width="1920" height="1080" alt="Popup" src="https://github.com/user-attachments/assets/7990868b-a4de-46b6-8e88-e5cd36babfde" />
 
-<img width="1920" height="1080" alt="Task List" src="https://github.com/user-attachments/assets/b703e239-feb0-4a8b-8ff1-5fbb578a6ee9" />
+<img width="1920" height="1080" alt="list" src="https://github.com/user-attachments/assets/7321052b-7df3-416e-adb4-0864ac39355a" />
+
